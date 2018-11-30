@@ -12,6 +12,27 @@ header{
     grid-row: 1;
     grid-column: 1 / span 3;
     background: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+#heading{
+    background: green;
+    height: 75px;
+    width: 50vw;
+}
+
+nav{
+    justify-self: flex-end;
+    align-self: flex-end;
+    display: flex;
+    height: 50px;
+    width:  25vw;
+    background: pink;
+}
+
+nav > ul > li {
+    color: white;
 }
 
 section{
