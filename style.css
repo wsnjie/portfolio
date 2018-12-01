@@ -6,20 +6,26 @@ body{
     display: grid;
     grid-template-rows: 75px 120px 1fr 40px;
     grid-template-columns: 1px 1fr 1px;
+    background-image: url(assets/paperbkgd.jpg);
+}
+h1, h2, h3, p, a{
+    font-family: 'Sedgwick Ave', cursive;
 }
 
 header{
     grid-row: 1;
     grid-column: 1 / span 3;
-    background: red;
     display: flex;
     justify-content: space-between;
 }
 
 #heading{
-    background: green;
     height: 75px;
     width: 50vw;
+}
+
+h1 {
+    font-size: 45px;
 }
 
 nav{
@@ -27,28 +33,36 @@ nav{
     align-self: flex-end;
     display: flex;
     height: 50px;
-    width:  25vw;
-    background: pink;
+    width:  35vw;
+}
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 35vw;
 }
 
-nav > ul > li {
-    color: white;
+.topnav a {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
 }
 
 section{
     grid-row: 2;
     grid-column: 2;
-    background: orange;
 }
 
 main {
     grid-row: 3;
     grid-column: 2;
-    background: blue;
 }
 
 footer{
     grid-row: 4;
     grid-column: 1 / span 3;
-    background: purple;
 }
