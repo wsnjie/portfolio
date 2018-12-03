@@ -84,7 +84,7 @@ main {
 
 #memgame{
     width: 75vw;
-    heigth: auto;
+    height: auto;
     object-fit: contain
 }
 
