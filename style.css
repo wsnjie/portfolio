@@ -78,11 +78,14 @@ main {
 
 .project {
     border: 1px black solid;
- 
+    width: 75vw;
+
 }
 
-.memgame{
-    object-fit: contain;
+#memgame{
+    width: 75vw;
+    heigth: auto;
+    object-fit: contain
 }
 
 footer{
