@@ -6,6 +6,7 @@ let feed = new Instafeed({
     accessToken: '217204082.1677ed0.637cf7479ac845ab937d1aef2dea3849',
     sortBy: 'random',
     resolution: 'low_resolution',
-    limit: 9
+    limit: 9,
+    template: '<a href="{{link}}"><img class="feedpics" src="{{image}}" /></a>'
 })
 feed.run()

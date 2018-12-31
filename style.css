@@ -1,6 +1,6 @@
 @font-face{ 
-    font-family: 'Hickory Jack';
-    src: url('assets/hickory_jack/Hickory-Jack.ttf');
+    font-family: 'Something Wild';
+    src: url('assets/somethingwild-Regular.ttf');
 }
 
 body{
@@ -13,17 +13,31 @@ body{
     grid-template-columns: 1px 1fr 1px;
     background-image: url(assets/paperbkgd.jpg);
     background-attachment: fixed;
-    background-repeat: none;
+    background-repeat: repeat;
 }
 h1{
-  font-family: 'Hickory Jack';
-  font-size: 50px;
+  font-family: 'Something Wild';
+  font-size: 75px;
+  margin: 5px;
+  font-weight: 100;
+  color: black;
 }
 
 h2, h3, p, a{
-    font-family: 'Sedgwick Ave', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 
+h2{
+  font-size: 20px;
+}
+
+h3{
+  font-size: 35px;
+}
+
+p{
+  font-size: 20px;
+}
 header{
     grid-row: 1;
     grid-column: 1 / span 3;
@@ -36,9 +50,6 @@ header{
     width: 50vw;
 }
 
-h1 {
-    font-size: 45px;
-}
 
 nav{
     justify-self: flex-end;
@@ -62,6 +73,8 @@ nav{
     text-decoration: none;
     font-size: 25px;
     color: black;
+    font-family: "Something Wild";
+    font-size: 50px;
 }
 
 section{
@@ -111,10 +124,16 @@ main {
 }
 
 #instafeed{
-  width: 75vw;
+  width: 80vw;
   height: auto;
   margin: 0 auto;
+}
+
+.feedpics{
+  width: auto;
+  height: auto;
   object-fit: contain;
+  border: 3px black solid;
 }
 
 
