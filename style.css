@@ -1,3 +1,8 @@
+@font-face{ 
+    font-family: 'Hickory Jack';
+    src: url('assets/hickory_jack/Hickory-Jack.ttf');
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -7,8 +12,15 @@ body{
     grid-template-rows: 75px 120px 1fr 40px;
     grid-template-columns: 1px 1fr 1px;
     background-image: url(assets/paperbkgd.jpg);
+    background-attachment: fixed;
+    background-repeat: none;
 }
-h1, h2, h3, p, a{
+h1{
+  font-family: 'Hickory Jack';
+  font-size: 50px;
+}
+
+h2, h3, p, a{
     font-family: 'Sedgwick Ave', cursive;
 }
 
@@ -79,14 +91,32 @@ main {
 .project {
     border: 1px black solid;
     width: 75vw;
+    margin: 5px;
 
 }
 
-#memgame{
+.project-pics{
     width: 75vw;
     height: auto;
     object-fit: contain
 }
+#gram-section{
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#instafeed{
+  width: 75vw;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
 
 footer{
     grid-row: 4;
